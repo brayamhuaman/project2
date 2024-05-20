@@ -13,7 +13,11 @@ class _Pagina2State extends State<Pagina2> {
     return Scaffold(
       body: const Center(
         child: Text("Hola soy pagina 2"),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {Navigator.pop(context)},
+        child: const Icon(Icons.nat),
+      ),
     );
   }
 }
